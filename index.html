@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Asher Rosen — Portfolio</title>
+  <style>
+    :root{--bg:#111;--text:#dfdfdf;--muted:#dfdfdf;--maxw:800px}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;padding:36px}
+    .container{max-width:var(--maxw);margin:0 auto}
+    header{margin-bottom:28px}
+    h1{font-size:20px;margin:0 0 6px}
+    p.lead{margin:0;color:var(--muted);font-size:14px}
+    nav{margin-top:14px}
+    nav a{color:var(--muted);text-decoration:none;margin-right:16px;font-size:14px}
+    section{background:#222;padding:18px;border-radius:8px;margin-bottom:18px}
+    h2{font-size:16px;margin:0 0 10px;font-size:18px;font-weight:700}
+    .project{margin-bottom:12px}
+    .project-title{font-weight:600;margin:3px 0;font-size:15px;font-weight:600}
+    .meta{color:var(--muted);font-size:13px;margin:6px 0}
+    a.link{color:var(--text);text-decoration:underline}
+
+    footer{color:var(--muted);font-size:13px;text-align:center;margin-top:10px}
+    @media (max-width:520px){body{padding:20px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Asher Rosen</h1>
+      <p class="lead">Software engineer — systems, cryptography</p>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="projects">
+        <h2>Recent Projects</h2>
+
+        <div class="project">
+          <div class="project-title">Custom Crypto Library and Messenger Service</div>
+          <div class="meta">SHA-256, HMAC, CSPRNG, X3DH, Double Ratchet, C, Python, Docker — educational implementations in C used together to implement the Signal messaging protocol</div>
+          <div><a class="link" href="https://github.com/AMR1234567891011/ashersfunctionlib">Repository</a>
+        </div>
+
+        <div class="project">
+          <div class="project-title">DART GTFS Service</div>
+          <div class="meta">Python, Docker — General Transit Feed Specification is a framework for distributing train and bus location and timing data. Dallas does not have a public endpoint, so this one scrapes their website live and makes its own service alerts</div>
+          <div><a class="link" href="https://github.com/AMR1234567891011/dartgtfs">Repository</a></div>
+        </div>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <div class="meta">B.S. in Computer Science - <span class="muted">The University of Tulsa 2022 - 2026</span></div>
+        <div class="meta">B.S. in Applied Mathematics - <span class="muted">The University of Tulsa 2022 - 2026</span></div>
+        <div class="meta">B.S. in Data Science - <span class="muted">The University of Tulsa 2022 - 2026</span></div>
+      </section>
+
+      <section id="resume">
+        <h2>Resume</h2>
+        <div class="meta">Download: <a class="link" href="./static/resume.pdf">resume.pdf</a></div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <div class="meta">Linkedin: <a class="link" href="https://www.linkedin.com/in/asher-rosen-53194623a/">my linkedin profile</a></div>
+        <div class="meta">Email: <a class="link" href="mailto:asher-home@outlook.com">asher-home@outlook.com</a></div>
+        <div class="meta">GitHub: <a class="link" href="https://github.com/AMR1234567891011">my github profile</a></div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
